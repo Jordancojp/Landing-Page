@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('roboto.eot'); /* IE9 Compat Modes */
+    src: url('roboto.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('roboto.woff') format('woff'), /* Modern Browsers */
+    url('roboto.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('roboto.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+body {
+    margin: 0px;
+}
+
+.Title {
+    background-color: #1F2937;
+    height: 512px;
+}
+
+.Header {
+    display: flex;
+    height: 64px;
+    margin: 0px 15pc;
+}
+
+.Container {
+    border: 4px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center; 
+    align-content: center;
+    padding: 0px 16px;
+}
+
+.LinkContainer {
+    display: flex;
+}
+
+.HeaderLogo {
+    font-size: 24px;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: left;
+    color: #F9FAF8;
+}
+
+.HeaderLink {
+    color: #E5E7EB;
+}
