@@ -11,38 +11,90 @@ body {
     margin: 0px;
 }
 
-.Title {
+.TitleBG {
+    display: flex;
+    flex-direction: column;
     background-color: #1F2937;
     height: 512px;
+    padding: 0px 20pc;
+    font-family: 'Roboto', sans-serif;
 }
 
 .Header {
     display: flex;
-    height: 64px;
-    margin: 0px 15pc;
-}
-
-.Container {
-    border: 4px;
-    border-radius: 8px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center; 
-    align-content: center;
-    padding: 0px 16px;
-}
-
-.LinkContainer {
-    display: flex;
+    justify-content: space-around;
+    min-height: 64px;
 }
 
 .HeaderLogo {
+    flex-basis: 100%;
     font-size: 24px;
     font-weight: bold;
-    flex-grow: 1;
     text-align: left;
     color: #F9FAF8;
+    align-content: center;
+}
+
+.LinkContainer {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: end;
 }
 
 .HeaderLink {
     color: #E5E7EB;
+    flex-grow: 1;
+    text-align: right;
+    align-content: center;
+}
+
+.Wire {
+    border: 4px;
+    border-color: solid white;
+}
+
+.HeroStatement {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-around;
+    padding: 10% 0;
+}
+
+.StatementSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.HeroMainText
+{
+    color: #F9FAF8;
+    font-size: 46px;
+    font-weight: bold;
+    padding-right: 12px;
+}
+
+.HeroSecondaryText
+{
+    color: #E5E7EB;
+    font-size: 18px;
+    padding-right: 12px;
+}
+
+.SignUp {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 8px;
+    max-width: 128px;
+    height: 32px;
+    font-weight: bold;
+}
+
+.StatementSection img {
+
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
