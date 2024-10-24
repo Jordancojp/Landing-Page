@@ -7,17 +7,22 @@
     url('roboto.svg#svgFontName') format('svg'); /* Legacy iOS */
   }
 
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     margin: 0px;
 }
 
-.TitleBG {
+.PageSection {
     display: flex;
     flex-direction: column;
+    padding: 0px 15pc;
+}
+
+.Title {
     background-color: #1F2937;
-    height: 512px;
-    padding: 0px 20pc;
-    font-family: 'Roboto', sans-serif;
 }
 
 .Header {
@@ -57,15 +62,14 @@ body {
     display: flex;
     flex-direction: row;
     flex: 1;
-    justify-content: space-around;
-    padding: 10% 0;
+    margin: 32px 0px;
 }
 
 .StatementSection {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .HeroMainText
@@ -74,6 +78,7 @@ body {
     font-size: 46px;
     font-weight: bold;
     padding-right: 12px;
+    padding-bottom: 24px;
 }
 
 .HeroSecondaryText
@@ -81,6 +86,7 @@ body {
     color: #E5E7EB;
     font-size: 18px;
     padding-right: 12px;
+    padding-bottom: 24px;
 }
 
 .SignUp {
@@ -88,14 +94,114 @@ body {
     color: #F9FAF8;
     border-radius: 8px;
     max-width: 128px;
-    height: 32px;
-    font-weight: bold;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;  
 }
 
 .StatementSection img {
-
     height: 100%;
     width: 100%;
     object-fit: contain;
+    border-radius: 16px;
+}
+
+.PageContents {
+    padding: 32px 15pc;
+    align-items: center;
+}
+
+.ContentsTitle {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    text-align: center;
+}
+
+.ImageList {
+    display: flex;
+    height: 128;
+    justify-content: space-around;
+}
+
+.someImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 180px;
+    min-height: 240px;
+    margin-top: 32px;
+}
+
+.someImg img {
+    flex: 0 0 1;
+    border: solid 4px;
+    border-color: #3882F6;
+    min-width: 160px;
+    min-height: 160px;
+    border-radius: 16px;
+}
+
+.someImg div {
+    flex: 0 0 1;
+    text-align: center;
+}
+
+.QuoteSection {
+    background-color: #E5E7EB;
+}
+
+.Quote {
+    padding: 64px 64px 16px 64px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 36px;
+}
+
+.Thor {
+    color: #1F2937;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: right;
+    padding: 16px 64px 64px 16px;
+}
+
+.CallToAction {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-around;
+    min-height: 64px;
+    margin: 64px 0px;
     border-radius: 8px;
+    flex-direction: row;
+}
+
+.CallContainer {
+    display: flex;
+    justify-content: space-around;
+    min-height: 64px;
+    padding: 32px 0px;
+    flex-direction: column;
+}
+
+.CallTitle {
+    color: #F9FAF8;
+    font-size: 26px;
+}
+
+.Text {
+    color:#E5E7EB;
+    font-size: 18px;
+}
+
+.CallToAction button {
+    color: #F9FAF8;
+    font-size: 18px;
+    align-self: center;
+    background-color: #3882F6;
+    border: 2px solid #F9FAF8;
+    border-radius: 8px;
+    min-height: 45px;
+    min-width: 140px;
 }
